@@ -1,0 +1,22 @@
+WRITE A BLOG BETWEEN DOCUMENT AND WINDOW
+
+                                           DOCUMENT
+         SYNTAX: document.property_name;             
+         * It Represents any HTML Document or Web page that is Loaded in browser
+         * It is Loaded inside the Window
+         * It is the Object of Window Property
+         * All the tags elements with attributes inHTML are part of the Document
+         * we can access the Document from a Window using the Window Document
+         * the Document is the part of BOM (browser object model) and (Document object model)         
+         * PROPERTIES of documents object such as TITLE,BODY,COOKIES,
+           - can also be accessed by a window like this window document
+
+                                             WINDOW
+         SYNTAX: window.property_name;
+         * It Represents a browser window or frame that displays the content of the webpages
+         * it is the very first object that is loaded in the web browser
+         * it is the object of the browser
+         * Globel object ,functions and variables of java script are members of the window object
+         * we can access the window from the window only
+         * the window part of BOM, not DOM
+         * proprties of the window object cannot be accessed by the Document object
