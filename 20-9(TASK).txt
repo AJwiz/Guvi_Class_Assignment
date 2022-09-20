@@ -1,0 +1,33 @@
+Write a JavaScript function to generate an array between two integers of 1 step length.
+
+var oarr = []; // Defining Empty array to store the provided length
+ 
+function len(n1,n2){ // Function is called as len(user defined)
+
+  for (var i=n1;i<=n2;i++){ //For looping used to get the array from one intial(n1) to end(n2)
+  oarr.push(i); 
+  }return oarr;
+}
+console.log(len(-2,2));
+
+
+Write a JavaScript program to find the most frequent item of an array.
+{HINT: From W3RESOURCE}
+
+var arr1 = [3, "q", "q", "q", 2, 3, "q", 3, "q", 2, 4, 9, 3];
+var times = 1; //most frequent times
+var oc = 0; //occurence
+var item; //to store repeated value
+for (var i = 0; i < arr1.length; i++) {   //nested for loop
+  for (var a = i; a < arr1.length; a++) {
+    if (arr1[i] == arr1[a])	 	  //nested if loop
+      oc = oc + 1;
+    if (times < oc) {
+      times = oc ;
+      item = arr1[i];
+    }
+  } oc= 0; 
+}
+//console.log(item); // repeated value stored
+console.log(item + " (" + (parseInt(times) +" " + "times" ) + ")"); // Required Output (bit biased to my knowledge)
+// my College ROLL NO:33
